@@ -1,5 +1,5 @@
 # fcc-responsive-web-design-survey-page
-Survey Page is a project for freeCodeCamp's Responsive Web Design course.
+Survey Form is a project for freeCodeCamp's Responsive Web Design course.
 **The description for this freeCodeCamp project is below. [The project is located here.](https://codepen.io/3y3l3ss0ur0b0r0s/full/abEpVvg)**
 
 >Build a Survey Form
