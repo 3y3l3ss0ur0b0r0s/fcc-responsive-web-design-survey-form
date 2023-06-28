@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Customer Service Satisfaction Survey</title>
+</head>
+
+<body id="main">
+  <div class="container">
+    <h1 id="title">Customer Service Satisfaction Survey</h1>
+    <p id="description"><em>Please complete the questions below. Submitting the survey will enter you into a drawing for a chance to win $200 in credits.</em></p>
+    <form id="survey-form" action="https://codepen.io/3y3l3ss0ur0b0r0s/full/abEpVvg">
+      <div class="section">
+        <h2>Contact Information</h2>
+        <em>Please provide your contact information below. We promise not to share your information or send you spam!</em>
+        <ul>
+          <li><label id="name-label"><b>Full name:</b> </label><input class="long-text-box" id="name" type="text" placeholder="First name, middle name, and last name" required></li>
+          <li><label id="email-label"><b>Email address:</b> </label><input id="email" type="email" placeholder="Email address" required></li>
+          <li><label id="number-label"><b>Phone number (enter numbers only): </label></b> <input class="short-text-box" id="number" type="number" minlength="10" maxlength="10" min="999999999" max="9999999999" min placeholder="##########" required></li>
+        </ul>
+        <br>
+        <hr>
+        <h2>Your Customer Service Experience</h2>
+        <em>Please select the store that you are reviewing.</em>
+        <ul>
+          <li>
+            <label for="stores"><b>Stores: </b></label><select id="dropdown" name="stores">
+              <option value="norfolk-va">Norfolk, VA</option>
+              <option value="virginia-beach-va">Virginia Beach, VA</option>
+              <option value="alexandria-virginia">Alexandria, VA</option>
+            </select>
+          </li>
+        </ul>
+        <br>
+        <em>Please indicate how much you agree or disagree with the below statements.</em>
+        <ul>
+          <li><b>Staff made me feel welcome as a customer.</b>
+            <br>
+            <label for="strongly agree"> <input type="radio" name="felt-welcome" value="strongly agree">Strongly agree </label>
+            <label for="agree"> <input type="radio" name="felt-welcome" value="strongly agree">Agree</label>
+            <label for="disagree"> <input type="radio" name="felt-welcome" value="disagree">Disagree</label>
+            <label for="stronly disagree"> <input type="radio" name="felt-welcome" value="strongly disagree">Strongly disagree</label>
+          </li>
+          <br>
+          <li><b>Staff inquired about my needs and ensured they would be met.</b>
+            <br>
+            <label for="strongly agree"> <input type="radio" name="needs-met" value="strongly agree">Strongly agree</label>
+            <label for="agree"> <input type="radio" name="needs-met" value="strongly agree">Agree</label>
+            <label for="disagree"> <input type="radio" name="needs-met" value="disagree">Disagree</label>
+            <label for="stronly disagree"> <input type="radio" name="needs-met" value="strongly disagree">Strongly disagree</label>
+          </li>
+          <br>
+          <li><b>I left the store feeling more satisfied than when I first entered.</b>
+            <br>
+            <label for="strongly agree"> <input type="radio" name="was-satisfied" value="strongly agree">Strongly agree</label>
+            <label for="agree"> <input type="radio" name="was-satisfied" value="strongly agree">Agree</label>
+            <label for="disagree"> <input type="radio" name="was-satisfied" value="disagree">Disagree</label>
+            <label for="stronly disagree"> <input type="radio" name="was-satisfied" value="strongly disagree">Strongly disagree</label>
+          </li>
+          <br>
+          <li><b>I am likely to recommend that others shop at this store.</b>
+            <br>
+            <label for="strongly agree"> <input type="radio" name="will-recommend" value="strongly agree">Strongly agree</label>
+            <label for="agree"> <input type="radio" name="will-recommend" value="strongly agree">Agree</label>
+            <label for="disagree"> <input type="radio" name="will-recommend" value="disagree">Disagree</label>
+            <label for="strongly disagree"> <input type="radio" name="will-recommend" value="strongly disagree">Strongly disagree</label>
+          </li>
+        </ul>
+        <br>
+        <em>Please select all statements that you agree with.</em>
+        <br>
+        <ul>
+          <li><label for="clean-store"> <input type="checkbox" name="clean-store" value="clean-store"><b> The store is clean and well-kept.</b></label></li>
+          <li><label for="fast-service"> <input type="checkbox" name="fast-service" value="fast-service"><b> Service at this store is fast and accurate.</b></label></li>
+          <li><label for="good-selection"> <input type="checkbox" name="good-selection" value="good-selection"><b> There is a good selection of products available at the store.</b></label></li>
+          <li><label for="good-hours"> <input type="checkbox" name="good-hours" value="good-hours"><b> The store's hours are convenient for me.</b></label></li>
+        </ul>
+        <br>
+        <hr>
+        <h2>Additional Comments</h2>
+        <em>Please enter any additional comments below. Thank you!</em>
+        <ul>
+          <li><label for="comments"><b>Comments:</b></label>
+            <br>
+            <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+          </li>
+        </ul>
+      </div>
+      <button class="center" id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <footer>
+    Copyright © 3y3l3ss0ur0b0r0s 2022
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
